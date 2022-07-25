@@ -32,7 +32,7 @@ function Todo({ todos, completeTodo, removeTodo, updateTodo }) {
           {/* Delete Icon */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="delete-icon"
+              className={todo.isComplete ? "delete-icon complete" : "delete-icon"}
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -48,7 +48,7 @@ function Todo({ todos, completeTodo, removeTodo, updateTodo }) {
           {/* Edit Icon */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="edit-icon"
+            className={todo.isComplete ? "edit-icon complete" : "edit-icon"}
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
