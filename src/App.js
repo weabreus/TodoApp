@@ -18,13 +18,13 @@ function App() {
         items: DATA,
       },
     });
-  });
+  }, []);
 
   return (
     <div className="App">
       <ul className="items-container">
         {state.items.map((item) => (
-          <li>{item}</li>
+          <li key={Math.floor(Math.random() * 10000)}>{item}</li>
         ))}
       </ul>
     </div>
