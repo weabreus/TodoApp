@@ -1,6 +1,6 @@
 import { useEffect, useReducer } from "react";
-import "./App.css";
-import reducer from "./reducer";
+import "./assets/styles/App.css";
+import reducer from "./services/reducers/reducer";
 
 const DATA = ["item 1", "item 2", "item 3"];
 
